@@ -1,6 +1,7 @@
 import unittest
 from NLcalculator import NLcalculator
 
+
 class MyTestCase(unittest.TestCase):
 
     def test_instantiate_calculator(self):
