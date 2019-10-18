@@ -1,5 +1,5 @@
 
 class NLcalculator:
 
-    def __int__(self):
+    def __init__(self):
         pass
