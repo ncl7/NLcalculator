@@ -1,12 +1,12 @@
 import unittest
-from NLcalculator import NLcalculator
+from NLcalculator import NLCalculator
 
 
 class MyTestCase(unittest.TestCase):
 
     def test_instantiate_calculator(self):
-        calculator = NLcalculator()
-        self.assertIsInstance(calculator, NLcalculator)
+        calculator = NLCalculator()
+        self.assertIsInstance(calculator, NLCalculator)
 
 
 if __name__ == '__main__':
