@@ -27,6 +27,5 @@ class NLCalculator:
         return self.result
 
     def division(self, a, b):
-        self.result = a / b
-        return division(a, b)
-
+        self.result = division(a, b)
+        return self.result
