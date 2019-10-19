@@ -6,6 +6,10 @@ def subtraction(a, b):
     return a - b
 
 
+def division(a, b):
+    return a / b
+
+
 class NLCalculator:
     result = 0
 
@@ -21,4 +25,8 @@ class NLCalculator:
     def subtract(self, a, b):
         self.result = a - b
         return subtraction(a, b)
+
+    def division(self, a, b):
+        self.result = a / b
+        return division(a, b)
 
