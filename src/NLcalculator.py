@@ -23,8 +23,8 @@ class NLCalculator:
         return self.result
 
     def subtract(self, a, b):
-        self.result = a - b
-        return subtraction(a, b)
+        self.result = subtraction(a, b)
+        return self.result
 
     def division(self, a, b):
         self.result = a / b
