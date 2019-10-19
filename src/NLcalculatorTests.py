@@ -10,7 +10,7 @@ class MyTestCase(unittest.TestCase):
 
     def test_results_property_calculator(self):
         calculator = NLCalculator()
-        self.assertEquals(calculator.result, 2)
+        self.assertEqual(calculator.result, 2)
 
     def test_add_method_calculator(self):
         calculator = NLCalculator()
@@ -19,7 +19,7 @@ class MyTestCase(unittest.TestCase):
     def test_subtract_method_calculator(self):
         calculator = NLCalculator()
         self.assertEqual(calculator.subtract(2, 1), 1)
-                         
+
 
 if __name__ == '__main__':
     unittest.main()
