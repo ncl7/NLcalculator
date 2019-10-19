@@ -10,6 +10,10 @@ def division(a, b):
     return a / b
 
 
+def multiply(a, b):
+    return a * b
+
+
 class NLCalculator:
     result = 0
 
@@ -28,4 +32,8 @@ class NLCalculator:
 
     def division(self, a, b):
         self.result = division(a, b)
+        return self.result
+
+    def multiply(self, a, b):
+        self.result = multiply(a, b)
         return self.result
