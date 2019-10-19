@@ -1,3 +1,6 @@
+def addition(a, b):
+    return a + b
+
 
 class NLCalculator:
     result = 0
@@ -8,5 +11,6 @@ class NLCalculator:
         pass
 
     def add(self, a, b):
-        c = a + b
-        return c
+        self.result = a + b
+        return addition(a, b)
+
