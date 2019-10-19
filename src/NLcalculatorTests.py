@@ -27,6 +27,11 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(calculator.division(2, 1), 2)
         self.assertEqual(calculator.result, 2)
 
+    def test_multiply_method_calculator(self):
+        calculator = NLCalculator()
+        self.assertEqual(calculator.multiply(3, 1), 3)
+        self.assertEqual(calculator.result, 3)
+
 
 if __name__ == '__main__':
     unittest.main()
