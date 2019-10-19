@@ -15,6 +15,7 @@ class MyTestCase(unittest.TestCase):
     def test_add_method_calculator(self):
         calculator = NLCalculator()
         self.assertEqual(calculator.add(1, 1), 2)
+        self.assertEqual(calculator.result, 2)
 
     def test_subtract_method_calculator(self):
         calculator = NLCalculator()
