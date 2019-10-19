@@ -19,8 +19,8 @@ class NLCalculator:
         pass
 
     def add(self, a, b):
-        self.result = a + b
-        return addition(a, b)
+        self.result = addition(a, b)
+        return self.result
 
     def subtract(self, a, b):
         self.result = a - b
