@@ -14,6 +14,14 @@ def multiply(a, b):
     return a * b
 
 
+def square(a):
+    return a * a
+
+
+def sqrt(a, b):
+    return a / b
+
+
 class NLCalculator:
     result = 0
 
@@ -36,4 +44,12 @@ class NLCalculator:
 
     def multiply(self, a, b):
         self.result = multiply(a, b)
+        return self.result
+
+    def square(self, a):
+        self.result = square(a)
+        return self.result
+
+    def sqrt(self, a, b):
+        self.result = sqrt(a, b)
         return self.result
