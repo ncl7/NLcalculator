@@ -18,6 +18,10 @@ def square(a):
     return a * a
 
 
+def sqrt(b):
+    return b / b
+
+
 class NLCalculator:
     result = 0
 
@@ -46,4 +50,6 @@ class NLCalculator:
         self.result = square(a)
         return self.result
 
-
+    def sqrt(self, b):
+        self.result = sqrt(b)
+        return self.result
