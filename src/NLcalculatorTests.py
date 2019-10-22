@@ -34,7 +34,7 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(self.calculator.result, 16)
 
     def test_sqrt_method_calculator(self):
-        self.assertEqual(self.calculator.sqrt(25, 5), 5)
+        self.assertEqual(self.calculator.sqrt(25), 5)
         self.assertEqual(self.calculator.result, 5)
 
 
