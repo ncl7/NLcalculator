@@ -19,7 +19,7 @@ def square(a):
 
 
 def sqrt(a):
-    return a ^ 1/2
+    return a ** 1/2
 
 
 class NLCalculator:
