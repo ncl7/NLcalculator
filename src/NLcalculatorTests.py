@@ -1,11 +1,13 @@
 import unittest
 from NLcalculator import NLCalculator
+from csvreader import CsvReader
 
 
 class MyTestCase(unittest.TestCase):
 
     def setUp(self) -> None:
         self.calculator = NLCalculator()
+        self.testData = CsvReader('Unit Test Addition.csv')
 
     def test_instantiate_calculator(self):
         self.assertIsInstance(self.calculator, NLCalculator)
