@@ -7,7 +7,6 @@ class MyTestCase(unittest.TestCase):
 
     def setUp(self) -> None:
         self.calculator = NLCalculator()
-        self.testData = CsvReader('Unit Test Addition.csv')
 
     def test_instantiate_calculator(self):
         self.assertIsInstance(self.calculator, NLCalculator)
@@ -16,6 +15,8 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(self.calculator.result, 2)
 
     def test_add_method_calculator(self):
+        testData = CsvReader('Unit Test Addition.csv').data
+
         self.assertEqual(self.calculator.add(1, 1), 2)
         self.assertEqual(self.calculator.result, 2)
 
