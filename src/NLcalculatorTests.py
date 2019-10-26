@@ -1,7 +1,7 @@
 import unittest
 from NLcalculator import NLCalculator
 from csvreader import CsvReader
-
+from pprint import pprint
 
 class MyTestCase(unittest.TestCase):
 
@@ -15,7 +15,8 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(self.calculator.result, 2)
 
     def test_add_method_calculator(self):
-        testData = CsvReader('Unit Test Addition.csv').data
+        test_data = CsvReader('UnitTestAddition.csv').data
+        pprint(test_data)
 
         self.assertEqual(self.calculator.add(1, 1), 2)
         self.assertEqual(self.calculator.result, 2)
