@@ -19,8 +19,8 @@ class MyTestCase(unittest.TestCase):
         test_data = CsvReader('/src/UnitTestAddition.csv').data
         pprint(test_data)
         for row in test_data:
-            self.assertEqual(self.calculator.add(row['0'], row['0']), row['answer'])
-            self.assertEqual(self.calculator.result, row['answer'])
+            self.assertEqual(self.calculator.add(row['Value 1'], row['Value 2']), row['Result'])
+            self.assertEqual(self.calculator.result, row['Result'])
 
         self.assertEqual(self.calculator.add(1, 1), 2)
         self.assertEqual(self.calculator.result, 2)
