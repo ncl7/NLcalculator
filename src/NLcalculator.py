@@ -5,6 +5,8 @@ def addition(a, b):
 
 
 def subtraction(a, b):
+    a = int(a)
+    b = int(b)
     return a - b
 
 
