@@ -16,11 +16,11 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(self.calculator.result, 2)
 
     def test_add_method_calculator(self):
-        csv_records = CsvReader('./src/UnitTestAddition.csv')
-        for row in csv_records.csv_data:
-            self.assertEqual(self.calculator.add(row['FirstNumber'],row['SecondNumber']))
+        test_data = CsvReader('/src/UnitTestAddition.csv').data
+        pprint(test_data)
+        for row in test_data.csv_data:
+            self.assertEqual(self.calculator.add(row['FirstNumber'], row['SecondNumber']), row['answer'])
             self.assertEqual(self.calculator.result, row['answer'])
-        pprint(csv_records)
 
         self.assertEqual(self.calculator.add(1, 1), 2)
         self.assertEqual(self.calculator.result, 2)
