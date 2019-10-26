@@ -22,6 +22,9 @@ class MyTestCase(unittest.TestCase):
             self.assertEqual(self.calculator.add(row['Value 1'], row['Value 2']), row['Result'])
             self.assertEqual(self.calculator.result, row['Result'])
 
+    def test_results_property(self):
+        self.assertEqual(self.calculator.result, 2)
+
         self.assertEqual(self.calculator.add(1, 1), 2)
         self.assertEqual(self.calculator.result, 2)
 
