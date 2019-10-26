@@ -16,8 +16,11 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(self.calculator.result, 2)
 
     def test_add_method_calculator(self):
-        test_data = CsvReader('UnitTestAddition.csv').data
-        pprint(test_data)
+        csv_records = CsvReader('./src/UnitTestAddition.csv')
+        for row in csv_records.csv_data:
+            self.assertEqual(self.calculator.add(row['FirstNumber'],row['SecondNumber']))
+            self.assertEqual(self.calculator.result, row['answer'])
+        pprint(csv_records)
 
         self.assertEqual(self.calculator.add(1, 1), 2)
         self.assertEqual(self.calculator.result, 2)
