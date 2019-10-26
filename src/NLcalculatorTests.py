@@ -18,8 +18,8 @@ class MyTestCase(unittest.TestCase):
     def test_add_method_calculator(self):
         test_data = CsvReader('/src/UnitTestAddition.csv').data
         pprint(test_data)
-        for row in test_data.csv_data:
-            self.assertEqual(self.calculator.add(row['FirstNumber'], row['SecondNumber']), row['answer'])
+        for row in test_data:
+            self.assertEqual(self.calculator.add(row['0'], row['0']), row['answer'])
             self.assertEqual(self.calculator.result, row['answer'])
 
         self.assertEqual(self.calculator.add(1, 1), 2)
