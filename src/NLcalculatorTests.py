@@ -22,8 +22,6 @@ class MyTestCase(unittest.TestCase):
             self.assertEqual(self.calculator.result, int(row['Result']))
 
     def test_results_property(self):
-        self.assertEqual(self.calculator.result, 2)
-
         self.assertEqual(self.calculator.add(1, 1), 2)
         self.assertEqual(self.calculator.result, 2)
 
@@ -34,8 +32,6 @@ class MyTestCase(unittest.TestCase):
             self.assertEqual(self.calculator.result, int(row['Result']))
 
     def test_results_property(self):
-        self.assertEqual(self.calculator.result, 1)
-
         self.assertEqual(self.calculator.subtract(2, 1), 1)
         self.assertEqual(self.calculator.result, 1)
 
