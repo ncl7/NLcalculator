@@ -4,10 +4,10 @@ def addition(a, b):
     return a + b
 
 
-def subtraction(a, b):
+def subtraction(b, a):
     a = int(a)
     b = int(b)
-    c = a - b
+    c = b - a
     return c
 
 
