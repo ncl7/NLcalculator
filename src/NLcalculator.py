@@ -7,7 +7,7 @@ def addition(a, b):
 def subtraction(b, a):
     a = int(a)
     b = int(b)
-    c = b - a
+    c = a - b
     return c
 
 
