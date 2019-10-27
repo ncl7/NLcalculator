@@ -1,6 +1,3 @@
-import math
-
-
 def addition(a, b):
     a = int(a)
     b = int(b)
