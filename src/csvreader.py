@@ -2,9 +2,8 @@ import csv
 from pprint import pprint
 
 
-def ClassFactory(class_name, dictionary):
-    return type(class_name, (object,), dictionary)
-    pass
+# def ClassFactory(class_name, dictionary):
+#    return type(class_name, (object,), dictionary)
 
 
 class CsvReader:
@@ -20,7 +19,5 @@ class CsvReader:
 
     def return_data_as_objects(self, class_name):
         objects = []
-        for row in self.data:
-            objects.append(type(ClassFactory(class_name, (object,), row))
-        return objects
-
+        for row in self.csv_data:
+            objects.append(type(class_name, (object,), row))
