@@ -33,7 +33,10 @@ def truncate(n, decimals):
 
 
 def multiply(a, b):
-    return a * b
+    a = int(a)
+    b = int(b)
+    c = a * b
+    return c
 
 
 def square(a):
