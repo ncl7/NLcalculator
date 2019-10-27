@@ -27,11 +27,6 @@ def round_half_up(n, decimals):
     return math.floor(n * multiplier + 0.5) / multiplier
 
 
-def truncate(n, decimals):
-    multiplier = 10 ** decimals
-    return int(n * multiplier) / multiplier
-
-
 def multiply(a, b):
     a = int(a)
     b = int(b)
