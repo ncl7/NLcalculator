@@ -42,8 +42,6 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(self.calculator.sqrt(25), 5)
         self.assertEqual(self.calculator.result, 5)
 
-    def print(self):
-        pprint()
 
 if __name__ == '__main__':
     unittest.main()

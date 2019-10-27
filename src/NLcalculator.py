@@ -18,7 +18,6 @@ def division(b, a):
     a = int(a)
     b = int(b)
     c = a / b
-    # c = truncate(c, 9)
     c = round_half_up(c, 9)
     return c
 
