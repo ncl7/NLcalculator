@@ -49,10 +49,10 @@ def sqrt(a):
     a = int(a)
     b = a ** 0.5
 
-    if a > 9:
-        b = round_half_up(b, 8)
-    else:
+    if b < 10:
         b = round_half_up(b, 9)
+    else:
+        b = round_half_up(b, 8)
     return b
 
 
