@@ -28,7 +28,7 @@ class MyTestCase(unittest.TestCase):
         test_data = CsvReader('/src/Unit Test Division.csv').data
         for row in test_data:
             self.assertEqual(self.calculator.division(row['Value 1'], row['Value 2']), float(row['Result']))
-            self.assertEqual(self.calculator.result, long(row['Result']))
+            self.assertEqual(self.calculator.result, float(row['Result']))
 
         self.assertEqual(self.calculator.division(2, 1), 2)
         self.assertEqual(self.calculator.result, 2)

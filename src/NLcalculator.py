@@ -18,7 +18,13 @@ def division(b, a):
     a = int(a)
     b = int(b)
     c = a / b
+    c = truncate(c, 9)
     return c
+
+
+def truncate(n, decimals):
+    multiplier = 10 ** decimals
+    return float(n * multiplier) / multiplier
 
 
 def multiply(a, b):
