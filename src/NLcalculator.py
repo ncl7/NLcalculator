@@ -18,13 +18,14 @@ def division(b, a):
     a = int(a)
     b = int(b)
     c = a / b
-    c = truncate(c, 9)
+    # c = truncate(c, 9)
+    c = round_half_up(c, 9)
     return c
 
 
-def round_up(n, decimals):
+def round_half_up(n, decimals):
     multiplier = 10 ** decimals
-    return math.ceil(n * multiplier) / multiplier
+    return math.floor(n * multiplier + 0.5) / multiplier
 
 
 def truncate(n, decimals):
