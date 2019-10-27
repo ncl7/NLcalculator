@@ -22,11 +22,6 @@ def division(b, a):
     return c
 
 
-def round_half_up(n, decimals):
-    multiplier = 10 ** decimals
-    return math.floor(n * multiplier + 0.5) / multiplier
-
-
 def multiply(a, b):
     a = int(a)
     b = int(b)
@@ -43,12 +38,16 @@ def square(a):
 def sqrt(a):
     a = int(a)
     b = a ** 0.5
-
     if b < 10:
         b = round_half_up(b, 9)
     else:
         b = round_half_up(b, 8)
     return b
+
+
+def round_half_up(n, decimals):
+    multiplier = 10 ** decimals
+    return math.floor(n * multiplier + 0.5) / multiplier
 
 
 class NLCalculator:
