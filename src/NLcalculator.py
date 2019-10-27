@@ -40,7 +40,9 @@ def multiply(a, b):
 
 
 def square(a):
-    return a * a
+    a = int(a)
+    b = a * a
+    return b
 
 
 def sqrt(a):
