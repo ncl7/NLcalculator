@@ -11,8 +11,11 @@ def subtraction(b, a):
     return c
 
 
-def division(a, b):
-    return a / b
+def division(b, a):
+    a = int(a)
+    b = int(b)
+    c = a / b
+    return c
 
 
 def multiply(a, b):
