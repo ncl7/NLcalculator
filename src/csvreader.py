@@ -4,6 +4,8 @@ from pprint import pprint
 
 def ClassFactory(class_name, dictionary):
     return type(class_name, (object,), dictionary)
+    pass
+
 
 class CsvReader:
     data = []
@@ -19,6 +21,6 @@ class CsvReader:
     def return_data_as_objects(self, class_name):
         objects = []
         for row in self.data:
-            objects.append(type(ClassFactory(class_name, row))
+            objects.append(type(ClassFactory(class_name, (object,), row))
         return objects
 
