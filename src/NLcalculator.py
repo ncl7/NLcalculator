@@ -1,3 +1,6 @@
+import math
+
+
 def addition(a, b):
     a = int(a)
     b = int(b)
@@ -19,9 +22,14 @@ def division(b, a):
     return c
 
 
+def round_up(n, decimals):
+    multiplier = 10 ** decimals
+    return math.ceil(n * multiplier) / multiplier
+
+
 def truncate(n, decimals):
     multiplier = 10 ** decimals
-    return float(n * multiplier) / multiplier
+    return int(n * multiplier) / multiplier
 
 
 def multiply(a, b):
