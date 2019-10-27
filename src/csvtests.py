@@ -9,6 +9,7 @@ class MyTestCase(unittest.TestCase):
         self.csv_reader = CsvReader('Unit Test Subtraction.csv')
         self.csv_reader = CsvReader('Unit Test Division.csv')
         self.csv_reader = CsvReader('Unit Test Multiplication.csv')
+        self.csv_reader = CsvReader('Unit Test Square.csv')
 
     def test_return_data_as_objects(self):
         people = self.csv_reader.return_data_as_objects('person')
