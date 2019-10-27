@@ -10,7 +10,7 @@ class CsvReader:
             csv_data = csv.DictReader(text_data, delimiter=",")
             for row in csv_data:
                 self.data.append(row)
-        # pprint(self.data)
+        pprint(self.data)
 
     def return_data_as_objects(self, class_name):
         objects = []
