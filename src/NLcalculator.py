@@ -4,7 +4,8 @@ import math
 def addition(a, b):
     a = int(a)
     b = int(b)
-    return a + b
+    c = a + b
+    return c
 
 
 def subtraction(b, a):
