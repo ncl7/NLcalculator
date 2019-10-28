@@ -1,33 +1,60 @@
+import math
+
+
 def addition(a, b):
-    return a + b
+    a = int(a)
+    b = int(b)
+    c = a + b
+    return c
 
 
-def subtraction(a, b):
-    return a - b
+def subtraction(b, a):
+    a = int(a)
+    b = int(b)
+    c = a - b
+    return c
 
 
-def division(a, b):
-    return a / b
+def division(b, a):
+    a = int(a)
+    b = int(b)
+    c = a / b
+    c = round_half_up(c, 9)
+    return c
 
 
 def multiply(a, b):
-    return a * b
+    a = int(a)
+    b = int(b)
+    c = a * b
+    return c
 
 
 def square(a):
-    return a * a
+    a = int(a)
+    b = a * a
+    return b
 
 
 def sqrt(a):
-    return a ** 0.5
+    a = int(a)
+    b = a ** 0.5
+    if b < 10:
+        b = round_half_up(b, 9)
+    else:
+        b = round_half_up(b, 8)
+    return b
+
+
+def round_half_up(n, decimals):
+    multiplier = 10 ** decimals
+    return math.floor(n * multiplier + 0.5) / multiplier
 
 
 class NLCalculator:
     result = 0
 
     def __init__(self):
-        x = 1 + 1
-        self.result = x
         pass
 
     def add(self, a, b):
